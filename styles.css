@@ -7,9 +7,8 @@ body {
     font-family: "Source Sans Pro", sans-serif;
 }
 
-/*  CODE I GOT FROM UI SNIPPETS */
 :root {
-    --bg-color: hsl(49 37% 94%);
+    --bg-color: black;
     --typewriterSpeed: 4s;
     --typewriterCharacters: 33;
   }
@@ -25,6 +24,7 @@ body {
   }
   
   h1 {
+    color: white;
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
     position: relative;
     font-family: "Source Code Pro", monospace;
@@ -51,8 +51,9 @@ body {
   }
   
   h1::after {
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
     width: 0.5em;
-    background: black;
+    background: white;
     animation: 
         typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
         blink 750ms steps(var(--typewriterCharacters)) infinite;
@@ -60,8 +61,8 @@ body {
 
   h2{
     opacity: 0;
-    animation: fadeIn 1s 6s forwards;
-    color: darkslategray;
+    animation: fadeIn 2s 6s forwards;
+    color: darkolivegreen;
   }
   
   @keyframes typewriter {
@@ -91,6 +92,14 @@ body {
   @media screen and (max-width:500px) {
     h1 {
       font-size: 20px;
+    }
+
+    h1::after {
+      width: 0.25em;
+    }
+
+    h2 {
+      font-size: 16px;
     }
   }
 
