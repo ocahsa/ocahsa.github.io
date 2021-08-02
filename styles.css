@@ -57,6 +57,12 @@ body {
         typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
         blink 750ms steps(var(--typewriterCharacters)) infinite;
   }
+
+  h2{
+    opacity: 0;
+    animation: fadeIn 1s 6s forwards;
+    color: darkslategray;
+  }
   
   @keyframes typewriter {
     to {
@@ -74,6 +80,12 @@ body {
       to{
           transform: translateY(-400px);
       }
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
   }
 
   
