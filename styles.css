@@ -23,20 +23,27 @@ body {
     background: var(--bg-color);
   }
   
-  h1 {
+  .openSeq h1 {
     color: white;
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
     position: relative;
     font-family: "Source Code Pro", monospace;
     position: relative;
     width: max-content;
-    /* animation: moveToTop 4s 7s forwards;
-    transition: transform ease-in 0.5s; */
+  }
 
+  .openSeq span {
+    color: darkorange;
+  }
+
+  h2{
+    opacity: 0;
+    animation: fadeIn 2s 6s forwards;
+    color: rgba(255, 255, 255, 0.3);
   }
   
-  h1::before,
-  h1::after {
+  .openSeq h1::before,
+  .openSeq h1::after {
     content: "";
     position: absolute;
     top: 0;
@@ -45,25 +52,21 @@ body {
     left: 0;
   }
   
-  h1::before {
+  .openSeq h1::before {
     background: var(--bg-color);
     animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
   }
   
-  h1::after {
+  .openSeq h1::after {
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
     width: 0.5em;
     background: white;
     animation: 
         typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
-        blink 750ms steps(var(--typewriterCharacters)) infinite;
+        blink 750ms steps(var(--typewriterCharacters)) infinite,
+        fadeOut 600ms 7s forwards;
   }
 
-  h2{
-    opacity: 0;
-    animation: fadeIn 2s 6s forwards;
-    color: darkolivegreen;
-  }
   
   @keyframes typewriter {
     to {
@@ -89,16 +92,22 @@ body {
     }
   }
 
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+    }
+  }
+
   @media screen and (max-width:500px) {
-    h1 {
+    .openSeq h1 {
       font-size: 20px;
     }
 
-    h1::after {
+    .openSeq h1::after {
       width: 0.25em;
     }
 
-    h2 {
+    .openSeq h2 {
       font-size: 16px;
     }
   }
