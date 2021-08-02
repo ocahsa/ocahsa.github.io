@@ -30,6 +30,7 @@ body {
     font-family: "Source Code Pro", monospace;
     position: relative;
     width: max-content;
+    animation: moveToTop 1.5s 8s forwards ease-in-out;
   }
 
   .openSeq span {
@@ -38,7 +39,9 @@ body {
 
   h2{
     opacity: 0;
-    animation: fadeIn 2s 6s forwards;
+    animation: 
+      fadeIn 2s 6s forwards,
+      fadeOut 1.8s 8s forwards;
     color: rgba(255, 255, 255, 0.3);
   }
   
@@ -82,7 +85,9 @@ body {
 
   @keyframes moveToTop {
       to{
-          transform: translateY(-400px);
+          transform: translateY(-200px);
+          opacity: 0;
+          display: none;
       }
   }
 
