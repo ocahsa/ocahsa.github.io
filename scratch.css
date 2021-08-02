@@ -8,7 +8,7 @@ body {
 }
 
 /*  CODE I GOT FROM UI SNIPPETS */
-/* :root {
+:root {
     --bg-color: hsl(49 37% 94%);
     --typewriterSpeed: 4s;
     --typewriterCharacters: 33;
@@ -30,8 +30,8 @@ body {
     font-family: "Source Code Pro", monospace;
     position: relative;
     width: max-content;
-    animation: moveToTop 4s 7s forwards;
-    transition: transform ease-in 0.5s;
+    /* animation: moveToTop 4s 7s forwards;
+    transition: transform ease-in 0.5s; */
 
   }
   
@@ -55,7 +55,7 @@ body {
     background: black;
     animation: 
         typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
-        blink 750ms steps(var(--typewriterCharacters)) inf;
+        blink 750ms steps(var(--typewriterCharacters)) infinite;
   }
   
   @keyframes typewriter {
@@ -74,6 +74,6 @@ body {
       to{
           transform: translateY(-400px);
       }
-  } */
+  }
 
   
