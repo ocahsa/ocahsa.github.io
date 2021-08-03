@@ -1,12 +1,3 @@
-body {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Source Sans Pro", sans-serif;
-}
-
 :root {
     --bg-color: black;
     --typewriterSpeed: 4s;
@@ -37,7 +28,7 @@ body {
     color: darkorange;
   }
 
-  h2{
+  .openSeq h2{
     opacity: 0;
     animation: 
       fadeIn 2s 6s forwards,
@@ -70,6 +61,18 @@ body {
         fadeOut 600ms 7s forwards;
   }
 
+  .mainContent {
+    opacity: 0;
+    display: none;
+    color: darkorange;
+    font-family: "Source Code Pro", monospace;
+    animation: fadeIn 1.3s forwards;
+  }
+
+  .mainContent h2 {
+    color: white;
+  }
+
   
   @keyframes typewriter {
     to {
@@ -87,7 +90,6 @@ body {
       to{
           transform: translateY(-200px);
           opacity: 0;
-          display: none;
       }
   }
 
