@@ -1,5 +1,5 @@
 :root {
-    --bg-color: black;
+    --bg-color: #181716;
     --typewriterSpeed: 4s;
     --typewriterCharacters: 33;
   }
@@ -21,11 +21,11 @@
     font-family: "Source Code Pro", monospace;
     position: relative;
     width: max-content;
-    animation: moveToTop 1.5s 8s forwards ease-in-out;
+    animation: fadeOut 1.8s 8s forwards;
   }
 
   .openSeq span {
-    color: darkorange;
+    color: palegreen;
   }
 
   .openSeq h2{
@@ -64,8 +64,9 @@
   .mainContent {
     opacity: 0;
     display: none;
-    color: darkorange;
-    font-family: "Source Code Pro", monospace;
+    font-size: xx-large;
+    color: palegreen;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     animation: fadeIn 1.3s forwards;
   }
 
