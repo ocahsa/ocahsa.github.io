@@ -24,6 +24,21 @@
 	--accent6:			#87c5a4;
 }
 
+.profile-image {
+	height: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 200px;
+	object-fit: cover;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.profile-image img {
+	height: auto;
+	width: 200px;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
